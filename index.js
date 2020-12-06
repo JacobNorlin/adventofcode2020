@@ -2,6 +2,7 @@ const path = require("path");
 const { inputUtil } = require("./src/inputs/inputUtil");
 const { runDay1 } = require("./src/day1");
 const { runDay2 } = require("./src/day2");
+const { runDay3 } = require("./src/day3");
 
 function main(day) {
     console.log(`running ${day}`);
@@ -12,6 +13,8 @@ function main(day) {
         case "day2":
             runDay2(inputUtil.getFileAsTextArr(path.join(__dirname, `src/inputs/${day}.txt`)));
             break;
+        case "day3":
+            runDay3(inputUtil.getFileAsTextArr(path.join(__dirname, `src/inputs/${day}.txt`)));
     }
 }
 
