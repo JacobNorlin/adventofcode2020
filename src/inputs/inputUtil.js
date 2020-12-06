@@ -13,6 +13,10 @@ inputUtil.getFileAsTextArr = function getFileAsTextArr(path) {
     return text.split(os.EOL);
 };
 
+inputUtil.getFileAsStr = function getFileAsStr(path) {
+    return fs.readFileSync(path, "utf-8");
+};
+
 module.exports = {
     inputUtil,
 };

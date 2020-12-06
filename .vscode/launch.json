@@ -10,7 +10,7 @@
             "name": "Launch Program",
             "skipFiles": ["<node_internals>/**"],
             "program": "${workspaceFolder}\\index.js",
-            "args": ["day3"]
+            "args": ["day4"]
         }
     ]
 }
