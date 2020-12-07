@@ -4,6 +4,7 @@ const { runDay1 } = require("./src/day1");
 const { runDay2 } = require("./src/day2");
 const { runDay3 } = require("./src/day3");
 const { runDay4 } = require("./src/day4");
+const { runDay5 } = require("./src/day5");
 
 function main(day) {
     console.log(`running ${day}`);
@@ -19,6 +20,9 @@ function main(day) {
             break;
         case "day4":
             runDay4(inputUtil.getFileAsStr(path.join(__dirname, `src/inputs/${day}.txt`)));
+            break;
+        case "day5":
+            runDay5(inputUtil.getFileAsTextArr(path.join(__dirname, `src/inputs/${day}.txt`)));
     }
 }
 
